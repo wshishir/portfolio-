@@ -1,75 +1,89 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ExternalLink } from "lucide-react"
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { ExternalLink } from 'lucide-react';
 
 export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: "Eco Ventures Rebrand",
-      description: "Complete brand identity redesign for an environmental startup.",
-      tags: ["Logo Design", "Brand Identity", "Typography"],
-      image: "/placeholder.svg?height=400&width=600",
+      title: 'Eco Ventures Rebrand',
+      description:
+        'Complete brand identity redesign for an environmental startup.',
+      tags: ['Logo Design', 'Brand Identity', 'Typography'],
+      image: '/placeholder.svg?height=400&width=600',
     },
     {
       id: 2,
-      title: "Fusion Restaurant",
-      description: "Logo and menu design for an upscale fusion restaurant.",
-      tags: ["Logo Design", "Print Design", "Illustration"],
-      image: "/placeholder.svg?height=400&width=600",
+      title: 'Fusion Restaurant',
+      description: 'Logo and menu design for an upscale fusion restaurant.',
+      tags: ['Logo Design', 'Print Design', 'Illustration'],
+      image: '/placeholder.svg?height=400&width=600',
     },
     {
       id: 3,
-      title: "Tech Summit 2023",
-      description: "Event branding and promotional materials for a tech conference.",
-      tags: ["Event Branding", "Social Media", "Print Design"],
-      image: "/placeholder.svg?height=400&width=600",
+      title: 'Tech Summit 2023',
+      description:
+        'Event branding and promotional materials for a tech conference.',
+      tags: ['Event Branding', 'Social Media', 'Print Design'],
+      image: '/placeholder.svg?height=400&width=600',
     },
-  ]
+  ];
 
   return (
-    <section id="projects" className="space-y-12 py-12">
-      <div className="space-y-4 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Projects</h2>
-        <p className="text-muted-foreground max-w-[600px] mx-auto">
-          A selection of my recent work across various industries and design disciplines.
+    <section id='projects' className='space-y-12 py-12'>
+      <div className='space-y-4 text-center'>
+        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
+          Featured Projects
+        </h2>
+        <p className='text-muted-foreground max-w-[600px] mx-auto'>
+          A selection of my recent work across various industries and design
+          disciplines.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
         {projects.map((project) => (
-          <Card key={project.id} className="overflow-hidden bg-card/50 backdrop-blur-sm border-primary/20">
-            <div className="aspect-video relative overflow-hidden">
+          <Card
+            key={project.id}
+            className='overflow-hidden bg-card/50 backdrop-blur-sm  hover:border-[#BBFF00]/20'
+          >
+            <div className='aspect-video relative overflow-hidden'>
               <Image
-                src={project.image || "/placeholder.svg"}
+                src={project.image || '/placeholder.svg'}
                 alt={project.title}
                 fill
-                className="object-cover transition-transform hover:scale-105 duration-500"
+                className='object-cover transition-transform hover:scale-105 duration-500'
               />
             </div>
-            <CardContent className="p-6 space-y-4">
+            <CardContent className='p-6 space-y-4'>
               <div>
-                <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="text-muted-foreground mt-2">{project.description}</p>
+                <h3 className='text-xl font-semibold'>{project.title}</h3>
+                <p className='text-muted-foreground mt-2'>
+                  {project.description}
+                </p>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className='flex flex-wrap gap-2'>
                 {project.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary" className="bg-primary/10">
+                  <Badge
+                    key={tag}
+                    variant='secondary'
+                    className='bg-[#BBFF00]/10'
+                  >
                     {tag}
                   </Badge>
                 ))}
               </div>
             </CardContent>
-            <CardFooter className="p-6 pt-0">
-              <Button variant="outline" size="sm" className="gap-2">
-                View Case Study <ExternalLink className="h-4 w-4" />
+            <CardFooter className='p-6 pt-0'>
+              <Button variant='outline' size='sm' className='gap-2'>
+                View Case Study <ExternalLink className='h-4 w-4' />
               </Button>
             </CardFooter>
           </Card>
         ))}
       </div>
     </section>
-  )
+  );
 }
