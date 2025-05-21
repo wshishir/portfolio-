@@ -10,17 +10,19 @@ export function AboutSection() {
           About Me
         </h2>
         <p className='text-muted-foreground max-w-[600px] mx-auto'>
-          I'm a passionate graphic designer with over 5 years of experience
-          creating stunning visual identities for brands.
+          I’m a 23-year-old self-taught graphic designer from Hyderabad, India
+          🇮🇳 shaping brands with creativity and bold design. With over two years
+          in the field, I’ve learned that design isn’t just about
+          aesthetics—it’s about storytelling.
         </p>
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-        <Card className='bg-card/50 backdrop-blur-sm hover:border-[#BBFF00]/20'>
+        <Card className='bg-card/50 backdrop-blur-sm hover:border-[#7600DE]/40'>
           <CardContent className='p-6 space-y-4'>
             <div className='flex items-center gap-2'>
-              <div className='p-2 rounded-full bg-[#BBFF00]/10'>
-                <Brush className='h-5 w-5 text-[#BBFF00]' />
+              <div className='p-2 rounded-full bg-[#7600DE]/10'>
+                <Brush className='h-5 w-5 text-[#7600DE]' />
               </div>
               <h3 className='text-xl font-semibold'>My Approach</h3>
             </div>
@@ -32,11 +34,11 @@ export function AboutSection() {
           </CardContent>
         </Card>
 
-        <Card className='bg-card/50 backdrop-blur-sm hover:border-[#BBFF00]/20'>
+        <Card className='bg-card/50 backdrop-blur-sm hover:border-[#7600DE]/40'>
           <CardContent className='p-6 space-y-4'>
             <div className='flex items-center gap-2'>
-              <div className='p-2 rounded-full bg-[#BBFF00]/10'>
-                <Lightbulb className='h-5 w-5 text-[#BBFF00]' />
+              <div className='p-2 rounded-full bg-[#7600DE]/10'>
+                <Lightbulb className='h-5 w-5 text-[#7600DE]' />
               </div>
               <h3 className='text-xl font-semibold'>Philosophy</h3>
             </div>

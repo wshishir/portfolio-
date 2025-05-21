@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export function HeroSection() {
   const [typedText, setTypedText] = useState("")
-  const fullText = "I create visual identities that leave a lasting impression."
+  const fullText = "I Create Designs That Commands Attention and Leaves a Mark."
 
   useEffect(() => {
     let i = 0
@@ -28,8 +28,8 @@ export function HeroSection() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
           <span className="relative">
-            Alex Johnson
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-[#BBFF00] animate-underline"></span>
+          Lakshmika Kesireddy👋🏻
+            <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-[#7600DE] animate-underline"></span>
           </span>
         </h1>
         <p className="text-2xl md:text-3xl text-muted-foreground font-light">Graphic Designer & Logo Specialist</p>
@@ -41,7 +41,7 @@ export function HeroSection() {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4">
-        <Button asChild className="animate-fadeIn bg-[#BBFF00] hover:bg-[#9ac32a] text-black" style={{ animationDelay: "1.5s" }}>
+        <Button asChild className="animate-fadeIn bg-[#7600DE] hover:bg-[#7600DE] text-white" style={{ animationDelay: "1.5s" }}>
           <Link href="#projects">
             View My Work <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
