@@ -41,9 +41,7 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+  
 }
 
 /* Custom container styles */
@@ -134,4 +132,6 @@ html {
 .logo-ticker-image {
   @apply h-16 w-auto;
 }
- 
+.skills-sec {
+  @apply bg-white text-black;
+}

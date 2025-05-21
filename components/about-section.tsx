@@ -19,7 +19,7 @@ export function AboutSection() {
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-        <Card className='bg-card/50 backdrop-blur-sm hover:border-[#7600DE]/40'>
+        <Card className='bg-card/50 backdrop-blur-sm hover:border-[#7600DE]'>
           <CardContent className='p-6 space-y-4'>
             <div className='flex items-center gap-2'>
               <div className='p-2 rounded-full bg-[#7600DE]/10'>
@@ -35,7 +35,7 @@ export function AboutSection() {
           </CardContent>
         </Card>
 
-        <Card className='bg-card/50 backdrop-blur-sm hover:border-[#7600DE]/40'>
+        <Card className='bg-card/50 backdrop-blur-sm hover:border-[#7600DE]'>
           <CardContent className='p-6 space-y-4'>
             <div className='flex items-center gap-2'>
               <div className='p-2 rounded-full bg-[#7600DE]/10'>
@@ -59,49 +59,49 @@ export function AboutSection() {
         <div className='flex flex-wrap justify-center gap-2'>
           <Badge
             variant='outline'
-            className='bg-[#BBFF00]/10 hover:bg-[#BBFF00]/20'
+            className='skills-sec'
           >
             Logo Design
           </Badge>
           <Badge
             variant='outline'
-            className='bg-[#BBFF00]/10 hover:bg-[#BBFF00]/20'
+            className='skills-sec'
           >
             Brand Identity
           </Badge>
           <Badge
             variant='outline'
-            className='bg-[#BBFF00]/10 hover:bg-[#BBFF00]/20'
+            className='skills-sec'
           >
             Typography
           </Badge>
           <Badge
             variant='outline'
-            className='bg-[#BBFF00]/10 hover:bg-[#BBFF00]/20'
+            className='skills-sec'
           >
             Illustration
           </Badge>
           <Badge
             variant='outline'
-            className='bg-[#BBFF00]/10 hover:bg-[#BBFF00]/20'
+            className='skills-sec'
           >
             UI/UX Design
           </Badge>
           <Badge
             variant='outline'
-            className='bg-[#BBFF00]/10 hover:bg-[#BBFF00]/20'
+            className='skills-sec'
           >
             Adobe Creative Suite
           </Badge>
           <Badge
             variant='outline'
-            className='bg-[#BBFF00]/10 hover:bg-[#BBFF00]/20'
+            className='skills-sec'
           >
             Figma
           </Badge>
           <Badge
             variant='outline'
-            className='bg-[#BBFF00]/10 hover:bg-[#BBFF00]/20'
+            className='skills-sec'
           >
             Motion Graphics
           </Badge>
