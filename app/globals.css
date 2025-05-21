@@ -15,7 +15,7 @@
     --popover-foreground: 0 0% 98%;
 
     --primary: 142 70% 45%;
-    --primary-foreground: #7600DE;
+    --primary-foreground: #7600de;
 
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -130,3 +130,8 @@ html {
 .rounded-sm {
   border-radius: calc(var(--radius) - 4px);
 }
+
+.logo-ticker-image {
+  @apply h-16 w-auto;
+}
+ 

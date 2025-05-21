@@ -1,9 +1,11 @@
 import type React from 'react';
 import '@/app/globals.css';
-import { Inter } from 'next/font/google';
+import { Syne } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const syne = Syne({ subsets: ['latin'], weight: '400' });
+export const jak = Plus_Jakarta_Sans({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
   title: 'Lakshmika - Graphic & Logo Designer',
@@ -17,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={syne.className}>
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
