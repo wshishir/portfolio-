@@ -8,26 +8,26 @@ export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: 'Eco Ventures Rebrand',
+      title: 'Beam & Bow',
       description:
         'Complete brand identity redesign for an environmental startup.',
       tags: ['Logo Design', 'Brand Identity', 'Typography'],
-      image: '/placeholder.svg?height=400&width=600',
+      image: '/project1.png?height=400&width=600',
     },
     {
       id: 2,
-      title: 'Fusion Restaurant',
+      title: 'Pitch Deck',
       description: 'Logo and menu design for an upscale fusion restaurant.',
       tags: ['Logo Design', 'Print Design', 'Illustration'],
-      image: '/placeholder.svg?height=400&width=600',
+      image: '/project2.png?height=400&width=600',
     },
     {
       id: 3,
-      title: 'Tech Summit 2023',
+      title: 'SRC Mega Store',
       description:
         'Event branding and promotional materials for a tech conference.',
       tags: ['Event Branding', 'Social Media', 'Print Design'],
-      image: '/placeholder.svg?height=400&width=600',
+      image: '/project3.png?height=400&width=600',
     },
   ];
 
@@ -47,11 +47,11 @@ export function ProjectsSection() {
         {projects.map((project) => (
           <Card
             key={project.id}
-            className='overflow-hidden bg-card/50 backdrop-blur-sm  hover:border-[#BBFF00]/20'
+            className='overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-white/20'
           >
             <div className='aspect-video relative overflow-hidden'>
               <Image
-                src={project.image || '/placeholder.svg'}
+                src={project.image}
                 alt={project.title}
                 fill
                 className='object-cover transition-transform hover:scale-105 duration-500'
@@ -69,7 +69,7 @@ export function ProjectsSection() {
                   <Badge
                     key={tag}
                     variant='secondary'
-                    className='bg-[#BBFF00]/10'
+                    className='bg-white text-black hover:bg-white/80'
                   >
                     {tag}
                   </Badge>
