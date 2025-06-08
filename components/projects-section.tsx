@@ -11,7 +11,7 @@ export function ProjectsSection() {
       title: 'Beam & Bow',
       description:
         'Complete brand identity redesign for an environmental startup.',
-      tags: ['Logo Design', 'Brand Identity', 'Typography'],
+      tags: ['Logo Design', 'Brand Identity'],
       image: '/project1.png?height=400&width=600',
     },
     {
@@ -26,7 +26,7 @@ export function ProjectsSection() {
       title: 'SRC Mega Store',
       description:
         'Event branding and promotional materials for a tech conference.',
-      tags: ['Event Branding', 'Social Media', 'Print Design'],
+      tags: ['Event Branding', 'Print Design'],
       image: '/project3.png?height=400&width=600',
     },
   ];
