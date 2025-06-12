@@ -7,7 +7,7 @@ import { SiteHeader } from "@/components/site-header"
 
 export default function Home() {
   return (
-    <div className="min-h-screen  text-foreground bg-black">
+    <div className="max-h-screen bg-black">
       <SiteHeader />
       <main className="flex flex-col items-center mb-16 bg-black">
         <div className="container max-w-3xl px-4 py-6 space-y-24">
@@ -17,7 +17,7 @@ export default function Home() {
           <ContactSection />
         </div>
       </main>
-      <FloatingBar />
+      <FloatingBar/>
     </div>
   )
 }

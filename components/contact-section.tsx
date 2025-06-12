@@ -25,7 +25,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id='contact' className='space-yt-12 py-12 bg-black'>
+    <section id='contact' className='space-yt-12 py-12 bg-black pb-20'>
       <div className='space-y-4 text-center'>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
           Get In Touch
