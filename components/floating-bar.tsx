@@ -1,6 +1,12 @@
 'use client';
 
-import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from 'lucide-react';
+import {
+  ArrowRight,
+  CalendarIcon,
+  HomeIcon,
+  MailIcon,
+  PencilIcon,
+} from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -151,7 +157,7 @@ export function FloatingBar() {
           ))}
           <Separator orientation='vertical' className='h-full py-2' />
           <button className='p-2 border rounded-lg bg-[#7600DE]'>
-            Contact me
+            Contact Me
           </button>
         </Dock>
       </TooltipProvider>

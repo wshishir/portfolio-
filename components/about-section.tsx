@@ -8,11 +8,10 @@ export function AboutSection() {
     <section id='about' className='space-y-12 py-12'>
       <div className='space-y-4 text-center'>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
-          About Me
-        </h2>
+          Know Me A Little       </h2>
         <p className='text-muted-foreground max-w-[600px] mx-auto'>
           I’m a 23-year-old self-taught graphic designer from Hyderabad, India
-          🇮🇳 shaping brands with creativity and bold design. With over two years
+          🇮shaping brands with creativity and bold design. With over two years
           in the field, I’ve learned that design isn’t just about
           aesthetics—it’s about storytelling.
         </p>
@@ -50,62 +49,6 @@ export function AboutSection() {
             </p>
           </CardContent>
         </Card>
-      </div>
-
-      <div className='space-y-4'>
-        <h3 className='text-xl font-semibold text-center'>
-          Skills & Expertise
-        </h3>
-        <div className='flex flex-wrap justify-center gap-2'>
-          <Badge
-            variant='outline'
-            className='skills-sec'
-          >
-            Logo Design
-          </Badge>
-          <Badge
-            variant='outline'
-            className='skills-sec'
-          >
-            Brand Identity
-          </Badge>
-          <Badge
-            variant='outline'
-            className='skills-sec'
-          >
-            Typography
-          </Badge>
-          <Badge
-            variant='outline'
-            className='skills-sec'
-          >
-            Illustration
-          </Badge>
-          <Badge
-            variant='outline'
-            className='skills-sec'
-          >
-            UI/UX Design
-          </Badge>
-          <Badge
-            variant='outline'
-            className='skills-sec'
-          >
-            Adobe Creative Suite
-          </Badge>
-          <Badge
-            variant='outline'
-            className='skills-sec'
-          >
-            Figma
-          </Badge>
-          <Badge
-            variant='outline'
-            className='skills-sec'
-          >
-            Motion Graphics
-          </Badge>
-        </div>
       </div>
     </section>
   );

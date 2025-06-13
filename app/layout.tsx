@@ -3,6 +3,7 @@ import '@/app/globals.css';
 import { Syne } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Plus_Jakarta_Sans } from 'next/font/google';
+import CustomCursor from '@/components/FlareCursor'
 
 const syne = Syne({ subsets: ['latin'], weight: '400' });
 export const jak = Plus_Jakarta_Sans({ subsets: ['latin'], weight: '400' });
@@ -28,6 +29,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <CustomCursor />
       </body>
     </html>
   );
