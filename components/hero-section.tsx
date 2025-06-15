@@ -58,11 +58,11 @@ export function HeroSection() {
         <div className='flex flex-col sm:flex-row gap-4'>
           <Button
             asChild
-            className='animate-fadeIn bg-[#7600DE] hover:bg-[#7600DE] text-white'
+            className='animate-fadeIn bg-[#7600DE] hover:bg-[#7600DE] text-white inline-flex items-center'
             style={{ animationDelay: '1.5s' }}
           >
-            <Link href='#projects'>
-              View My Work <ArrowRight className='ml-2 h-4 w-4' />
+            <Link href='#projects' className='inline-flex items-center gap-2'>
+              View My Work <ArrowRight className='h-4 w-4' />
             </Link>
           </Button>
           <Button
