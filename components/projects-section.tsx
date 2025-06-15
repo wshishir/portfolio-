@@ -12,7 +12,7 @@ export function ProjectsSection() {
       title: 'Beam & Bow',
       description:
         'Designed a bespoke logo and brand identity for Beam & Bow, inspired by the interplay of light and movement.',
-      tags: ['Logo Design', 'Brand Identity'],
+      tags: ['Logo Design', 'Branding'],
       image: '/project1.png?height=400&width=600',
     },
     {
@@ -20,29 +20,29 @@ export function ProjectsSection() {
       title: 'Pitch Deck',
       description:
         'Created a dynamic pitch deck for a personal branding agency that blends storytelling, data, and bold design.',
-      tags: ['Logo Design', 'Print Design', 'Illustration'],
+      tags: ['Graphic Design', 'Pitch Deck'],
       image: '/project2.png?height=400&width=600',
     },
     {
       id: 3,
-      title: 'SRC Mega Store',
+      title: 'Sannala Ravi Chandra',
       description:
         'Designed the full brand identity for Sannala Ravi Chandhra’s e-commerce site — clean, sharp, and built to stand out in the digital crowd.',
-      tags: ['Event Branding', 'Logo', 'E-Commerce'],
+      tags: ['Branding Identity', 'Logo'],
       image: '/project3.png?height=400&width=600',
     },
     {
       id: 4,
       title: 'Carousel Design',
       description:
-        'Developed a cohesive carousel design tailored for Instagram, focusing on visual hierarchy, brand tone, and seamless slide transitions to boost engagement and shareability.',
+        'Developed a cohesive carousel design tailored for Instagram, focusing on brand tone, and seamless slide transitions to boost engagement.',
       tags: ['Graphic Design', 'Social Media'],
       image: '/project4.png?height=400&width=600',
     },
   ];
 
   return (
-    <section id='projects' className='space-y-12 py-12'>
+    <section id='projects' className='space-y-12'>
       <div className='space-y-4 text-center'>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
           Featured Projects
@@ -87,7 +87,15 @@ export function ProjectsSection() {
               </div>
             </CardContent>
             <CardFooter className='p-6 pt-0'>
-              <Button variant='outline' size='sm' className='gap-2'>
+              <Button
+                variant='outline'
+                size='sm'
+                className='gap-2'
+                onClick={() =>
+                  (window.location.href =
+                    'https://www.behance.net/lakshmikesired')
+                }
+              >
                 View Details <ExternalLink className='h-4 w-4' />
               </Button>
             </CardFooter>
@@ -95,7 +103,7 @@ export function ProjectsSection() {
         ))}
       </div>
 
-      <div className='flex justify-center pt-4'>
+      <div className='flex justify-center pt-2'>
         <Button
           variant='outline'
           size='lg'

@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Download } from 'lucide-react';
 import Link from 'next/link';
 import { LogoTicker } from './logo-slider';
+import Image from 'next/image';
 
 export function HeroSection() {
   const [typedText, setTypedText] = useState('');
@@ -27,7 +28,16 @@ export function HeroSection() {
 
   return (
     <section>
-      <div className='flex flex-col items-center justify-center min-h-[70vh] text-center space-y-8 py-12'>
+      <div className='flex flex-col items-center justify-center min-h-[70vh] text-center space-y-8 mb-16'>
+        <div className='relative w-48 h-48 md:w-80 md:h-72'>
+          <Image
+            src='/hero.png'
+            alt='Lakshmika Kesireddy'
+            fill
+            className='object-cover'
+            priority
+          />
+        </div>
         <div className='space-y-4'>
           <h1 className='text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl'>
             <span className='relative'>
@@ -39,8 +49,8 @@ export function HeroSection() {
             Graphic Designer & Logo Specialist
           </p>
         </div>
-        <div className='h-20'>
-          <p className='text-lg md:text-xl max-w-[600px] text-'>
+        <div className='h-14'>
+          <p className='text-lg md:text-xl max-w-[600px] '>
             {typedText}
             <span className='animate-pulse'>|</span>
           </p>
@@ -64,7 +74,7 @@ export function HeroSection() {
           </Button>
         </div>
       </div>
-      <LogoTicker/>
+      <LogoTicker />
     </section>
   );
 }
