@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
@@ -10,14 +11,15 @@ export function ProjectsSection() {
       id: 1,
       title: 'Beam & Bow',
       description:
-        'Complete brand identity redesign for an environmental startup.',
+        'Designed a bespoke logo and brand identity for Beam & Bow, inspired by the interplay of light and movement.',
       tags: ['Logo Design', 'Brand Identity'],
       image: '/project1.png?height=400&width=600',
     },
     {
       id: 2,
       title: 'Pitch Deck',
-      description: 'Logo and menu design for an upscale fusion restaurant.',
+      description:
+        'Created a dynamic pitch deck for a personal branding agency that blends storytelling, data, and bold design.',
       tags: ['Logo Design', 'Print Design', 'Illustration'],
       image: '/project2.png?height=400&width=600',
     },
@@ -25,9 +27,17 @@ export function ProjectsSection() {
       id: 3,
       title: 'SRC Mega Store',
       description:
-        'Event branding and promotional materials for a tech conference.',
-      tags: ['Event Branding', 'Print Design'],
+        'Designed the full brand identity for Sannala Ravi Chandhra’s e-commerce site — clean, sharp, and built to stand out in the digital crowd.',
+      tags: ['Event Branding', 'Logo', 'E-Commerce'],
       image: '/project3.png?height=400&width=600',
+    },
+    {
+      id: 4,
+      title: 'Carousel Design',
+      description:
+        'Developed a cohesive carousel design tailored for Instagram, focusing on visual hierarchy, brand tone, and seamless slide transitions to boost engagement and shareability.',
+      tags: ['Graphic Design', 'Social Media'],
+      image: '/project4.png?height=400&width=600',
     },
   ];
 
@@ -43,7 +53,7 @@ export function ProjectsSection() {
         </p>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-7'>
         {projects.map((project) => (
           <Card
             key={project.id}
@@ -78,11 +88,24 @@ export function ProjectsSection() {
             </CardContent>
             <CardFooter className='p-6 pt-0'>
               <Button variant='outline' size='sm' className='gap-2'>
-                View Case Study <ExternalLink className='h-4 w-4' />
+                View Details <ExternalLink className='h-4 w-4' />
               </Button>
             </CardFooter>
           </Card>
         ))}
+      </div>
+
+      <div className='flex justify-center pt-4'>
+        <Button
+          variant='outline'
+          size='lg'
+          className='gap-2'
+          onClick={() =>
+            (window.location.href = 'https://www.behance.net/lakshmikesired')
+          }
+        >
+          View More Projects <ExternalLink className='h-4 w-4' />
+        </Button>
       </div>
     </section>
   );

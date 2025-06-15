@@ -109,7 +109,7 @@ const DATA = {
 
 export function FloatingBar() {
   return (
-    <div className='flex flex-col items-center justify-center fixed bottom-1 left-0 right-0'>
+    <div className='flex flex-col items-center justify-center fixed bottom-1 left-0 right-0 '>
       <TooltipProvider>
         <Dock direction='middle'>
           {DATA.navbar.map((item) => (

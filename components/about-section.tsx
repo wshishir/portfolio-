@@ -9,7 +9,7 @@ export function AboutSection() {
       <div className='space-y-4 text-center'>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
           Know Me A Little       </h2>
-        <p className='text-muted-foreground max-w-[600px] mx-auto'>
+        <p className='text-muted-foreground max-w-[600px] mx-4 md:mx-auto'>
           I’m a 23-year-old self-taught graphic designer from Hyderabad, India
           🇮shaping brands with creativity and bold design. With over two years
           in the field, I’ve learned that design isn’t just about
@@ -17,7 +17,7 @@ export function AboutSection() {
         </p>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mx-3  md:mx-auto'>
         <Card className='bg-card/50 backdrop-blur-sm hover:border-[#7600DE]'>
           <CardContent className='p-6 space-y-4'>
             <div className='flex items-center gap-2'>
