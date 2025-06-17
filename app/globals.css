@@ -145,7 +145,7 @@ html {
   z-index: 999999 !important ;
   backdrop-filter: blur(1px);
   background-color: #0000005e;
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.2s ease-in-out;
   cursor: none !important; /* Let's hide the default cursor so it looks way better */
 }
 

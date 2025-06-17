@@ -1,5 +1,5 @@
-'use client'
-import React, { useState, useEffect } from "react";
+'use client';
+import React, { useState, useEffect } from 'react';
 
 // This functional component represents a custom cursor with a flare effect.
 function FlareCursor() {
@@ -19,15 +19,15 @@ function FlareCursor() {
 
     // Check if the cursor is over a clickable element by inspecting the cursor style.
     setIsPointer(
-      window.getComputedStyle(target).getPropertyValue("cursor") === "pointer"
+      window.getComputedStyle(target).getPropertyValue('cursor') === 'pointer'
     );
   };
 
   // Set up an effect to add and remove the mousemove event listener.
   useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []); // The empty dependency array ensures that this effect runs only once on mount.
 
@@ -35,18 +35,22 @@ function FlareCursor() {
   const flareSize = isPointer ? 0 : 30;
 
   // Adjust the cursor position to create a visual effect when over a clickable element.
-  const cursorStyle = isPointer ? { left: "-100px", top: "-100px" } : {};
+  const cursorStyle = isPointer ? { left: '-100px', top: '-100px' } : {};
 
   // Render the custom cursor element with dynamic styles based on cursor state.
   return (
     <div
-      className={`flare ${isPointer ? "pointer" : ""}`}
+      className={`flare ${isPointer ? 'pointer' : ''}`}
       style={{
         ...cursorStyle,
         left: `${position.x}px`,
         top: `${position.y}px`,
         width: `${flareSize}px`,
         height: `${flareSize}px`,
+        transform: 'translate(-50%, -50%)',
+        position: 'fixed',
+        pointerEvents: 'none',
+        zIndex: 9999,
       }}
     ></div>
   );

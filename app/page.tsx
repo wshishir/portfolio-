@@ -4,6 +4,7 @@ import { ProjectsSection } from "@/components/projects-section"
 import { ContactSection } from "@/components/contact-section"
 import { FloatingBar } from "@/components/floating-bar"
 import { SiteHeader } from "@/components/site-header"
+import ServicesSection from "@/components/services-section"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <div className="container max-w-3xl px-4 py-6 space-y-24">
           <HeroSection />
           <AboutSection />
+          <ServicesSection/>
           <ProjectsSection />
           <ContactSection />
         </div>

@@ -98,7 +98,7 @@ const DATA = {
         url: 'https://www.behance.net/lakshmikesired',
         icon: Icons.Behance,
       },
-      email: {
+      Email: {
         name: 'Send Email',
         url: 'mailto:designbylakshmika@gmail.com',
         icon: Icons.email,
@@ -157,7 +157,7 @@ export function FloatingBar() {
           ))}
           <Separator orientation='vertical' className='h-full py-2' />
           <button className='p-2 border rounded-lg bg-[#7600DE]'>
-            Contact Me
+            <Link href='#contact'>Contact Me</Link>
           </button>
         </Dock>
       </TooltipProvider>

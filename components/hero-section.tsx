@@ -62,7 +62,7 @@ export function HeroSection() {
             style={{ animationDelay: '1.5s' }}
           >
             <Link href='#projects' className='inline-flex items-center gap-2'>
-              View My Work <ArrowRight className='h-4 w-4' />
+              View My Work<ArrowRight className='h-4 w-4' />
             </Link>
           </Button>
           <Button
