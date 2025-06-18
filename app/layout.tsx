@@ -11,6 +11,7 @@ export const jak = Plus_Jakarta_Sans({ subsets: ['latin'], weight: '400' });
 export const metadata = {
   title: 'Lakshmika - Graphic & Logo Designer',
   description: '',
+  icons:'/favicon.png',
 };
 
 export default function RootLayout({
