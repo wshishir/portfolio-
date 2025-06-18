@@ -48,14 +48,15 @@ export function HeroSection() {
         {/* Main Heading with Underline */}
         <div className='mb-8'>
           <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4'>
-            Designing digital
+            <span className='relative'>
+              Designing
+              <div className='absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-white to-purple-500 rounded-full'></div>
+            </span>{' '}
+            digital
             <br />
             logos, brands &
             <br />
-            <span className='relative'>
-              experience.
-              <div className='absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full'></div>
-            </span>
+            experience.
           </h1>
         </div>
 
@@ -69,7 +70,7 @@ export function HeroSection() {
 
         {/* CTA Button */}
         <button className='bg-[#7600DE] text-white px-8 py-3 rounded-full font-semibold text-sm tracking-wide hover:bg-[#7600DE]/70 transition-colors uppercase'>
-          View My Work
+          <Link href='#projects'> View My Work</Link>
         </button>
       </div>
       <LogoTicker />
