@@ -41,7 +41,7 @@ const ServicesSection = () => {
         <Image
           src='/arrow.png'
           alt='arrow'
-          className='text-white absolute top-[5%] right-[12%] -rotate-180 '
+          className='text-white absolute -rotate-180 right-[9%] top-2 md:top-4 md:right-28'
           width={40}
           height={40}
         />

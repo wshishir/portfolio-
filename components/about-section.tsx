@@ -8,12 +8,13 @@ export function AboutSection() {
     <section id='about' className='space-y-12 py-12'>
       <div className='space-y-4 text-center'>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl hello'>
-          Know Me A Little       </h2>
+          Know Me A Little{' '}
+        </h2>
         <p className='text-muted-foreground max-w-[600px] mx-4 md:mx-auto'>
           I’m a 23-year-old self-taught graphic designer from Hyderabad, India
-          🇮shaping brands with creativity and bold design. With over two years
-          in the field, I’ve learned that design isn’t just about
-          aesthetics—it’s about storytelling.
+          shaping brands with creativity and bold design. With over two years in
+          the field, I’ve learned that design isn’t just about aesthetics—it’s
+          about storytelling.
         </p>
       </div>
 
@@ -21,10 +22,10 @@ export function AboutSection() {
         <Card className='bg-card/50 backdrop-blur-sm hover:border-[#7600DE]'>
           <CardContent className='p-6 space-y-4'>
             <div className='flex items-center gap-2'>
-              <div className='p-2 rounded-full bg-[#7600DE]/10'>
+              <div className='p-2 rounded-full bg-white'>
                 <Brush className='h-5 w-5 text-[#7600DE]' />
               </div>
-              <h3 className='text-xl font-semibold'>My Approach</h3>
+              <h3 className='text-xl font-semibold hello'>My Approach</h3>
             </div>
             <p className='text-muted-foreground'>
               I believe that great design tells a story. My process involves
@@ -37,10 +38,10 @@ export function AboutSection() {
         <Card className='bg-card/50 backdrop-blur-sm hover:border-[#7600DE]'>
           <CardContent className='p-6 space-y-4'>
             <div className='flex items-center gap-2'>
-              <div className='p-2 rounded-full bg-[#7600DE]/10'>
+              <div className='p-2 rounded-full bg-white'>
                 <Lightbulb className='h-5 w-5 text-[#7600DE]' />
               </div>
-              <h3 className='text-xl font-semibold'>Philosophy</h3>
+              <h3 className='text-xl font-semibold hello'>Philosophy</h3>
             </div>
             <p className='text-muted-foreground'>
               Simplicity is the ultimate sophistication. I focus on creating

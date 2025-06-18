@@ -28,51 +28,49 @@ export function HeroSection() {
 
   return (
     <section>
-      <div className='flex flex-col items-center justify-center min-h-[70vh] text-center space-y-8 mb-16'>
-        <div className='relative w-48 h-48 md:w-80 md:h-72'>
+      <div className='flex flex-col items-center justify-center px-8 py-12 text-center max-w-4xl mx-auto'>
+        {/* Profile Image */}
+        <div className='w-24 h-24 rounded-full overflow-hidden mb-8 bg-white'>
           <Image
-            src='/hero.png'
-            alt='Lakshmika Kesireddy'
-            fill
-            className='object-cover'
-            priority
+            src='/hero.svg'
+            alt='Profile photo'
+            width={96}
+            height={96}
+            className='w-full h-full object-cover'
           />
         </div>
-        <div className='space-y-4'>
-          <h1 className='text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl'>
+
+        {/* Greeting */}
+        <h2 className='text-xl md:text-2xl font-medium mb-6 text-gray-200'>
+          Hi, I'm Lakshmika 👋
+        </h2>
+
+        {/* Main Heading with Underline */}
+        <div className='mb-8'>
+          <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4'>
+            Designing digital
+            <br />
+            logos, brands &
+            <br />
             <span className='relative'>
-              Lakshmika Kesireddy👋🏻
-              <span className='absolute -bottom-1 left-0 w-full h-[3px] bg-[#7600DE] animate-underline'></span>
+              experience.
+              <div className='absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full'></div>
             </span>
           </h1>
-          <p className='text-2xl md:text-3xl text-muted-foreground font-light'>
-            Graphic Designer & Logo Specialist
-          </p>
         </div>
-        <div className='h-14'>
-          <p className='text-lg md:text-xl max-w-[600px] '>
-            {typedText}
-            <span className='animate-pulse'>|</span>
-          </p>
-        </div>
-        <div className='flex flex-col sm:flex-row gap-4'>
-          <Button
-            asChild
-            className='animate-fadeIn bg-[#7600DE] hover:bg-[#7600DE] text-white inline-flex md:items-center'
-            style={{ animationDelay: '1.5s' }}
-          >
-            <Link href='#projects' className='inline-flex items-center gap-2'>
-              View My Work<ArrowRight className='h-4 w-4' />
-            </Link>
-          </Button>
-          <Button
-            variant='outline'
-            className='animate-fadeIn'
-            style={{ animationDelay: '1.8s' }}
-          >
-            <Download className='mr-2 h-4 w-4' /> Download Resume
-          </Button>
-        </div>
+
+        {/* Subtext */}
+        <p className='text-gray-400 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed'>
+          a Graphic Designer and Brand Designer in India.
+          <br />I specialize in Logo Design, Brand Design,
+          <br />
+          and Visual Identity.
+        </p>
+
+        {/* CTA Button */}
+        <button className='bg-[#7600DE] text-white px-8 py-3 rounded-full font-semibold text-sm tracking-wide hover:bg-[#7600DE]/70 transition-colors uppercase'>
+          View My Work
+        </button>
       </div>
       <LogoTicker />
     </section>

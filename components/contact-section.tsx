@@ -14,7 +14,13 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowDown, ChevronsDown, Download, Mail, MapPin, Phone, Send } from 'lucide-react';
+import {
+  ChevronsDown,
+  Mail,
+  MapPin,
+  Phone,
+  Send,
+} from 'lucide-react';
 
 export function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);

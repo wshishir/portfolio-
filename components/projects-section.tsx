@@ -42,7 +42,7 @@ export function ProjectsSection() {
   ];
 
   return (
-    <section id='projects' className='space-y-12'>
+    <section id='projects' className='space-y-8'>
       <div className='space-y-4 text-center'>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl hello'>
           Featured Projects
