@@ -7,7 +7,7 @@ export function AboutSection() {
   return (
     <section id='about' className='space-y-12 py-12'>
       <div className='space-y-4 text-center'>
-        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
+        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl hello'>
           Know Me A Little       </h2>
         <p className='text-muted-foreground max-w-[600px] mx-4 md:mx-auto'>
           I’m a 23-year-old self-taught graphic designer from Hyderabad, India

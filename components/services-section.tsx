@@ -1,16 +1,8 @@
 'use client';
 import React from 'react';
-import {
-  ArrowRight,
-  PenTool,
-  Gem,
-  Printer,
-  SquareChartGantt,
-} from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { PenTool, Gem, Printer, SquareChartGantt } from 'lucide-react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import Image from 'next/image';
-import { Badge } from '@/components/ui/badge';
 
 const ServicesSection = () => {
   const services = [
@@ -46,8 +38,14 @@ const ServicesSection = () => {
   return (
     <section id='services' className='relative'>
       <div className='text-center space-y-4'>
-      <Image src='/arrow.png' alt='arrow' className='text-white absolute top-[5%] right-[12%] -rotate-180' width={40} height={40} />
-        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
+        <Image
+          src='/arrow.png'
+          alt='arrow'
+          className='text-white absolute top-[5%] right-[12%] -rotate-180 '
+          width={40}
+          height={40}
+        />
+        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl hello'>
           Offered Services
         </h2>
         <p className='text-muted-foreground max-w-[600px] mx-auto'>
@@ -61,15 +59,15 @@ const ServicesSection = () => {
             className='overflow-hidden bg-card/50 backdrop-blur-sm hover:border-[#7600DE]'
           >
             <CardContent className='mt-5'>
-              <div className='flex flex-col gap-3 '>
+              <div className='flex flex-col gap-3'>
                 <div className='p-2 bg-white rounded-full w-10'>
-                {/*proper react create element for icons, image tag cannot be used here  */}
+                  {/*proper react create element for icons, image tag cannot be used here  */}
                   {React.createElement(service.icon, {
                     className: 'w-6 h-6 text-[#7600DE]/60',
                   })}
                 </div>
                 <div>
-                  <h3 className='text-xl font-semibold'>{service.title}</h3>
+                  <h3 className='text-xl font-semibold hello'>{service.title}</h3>
                   <p className='text-muted-foreground mt-2 text-start'>
                     {service.description}
                   </p>

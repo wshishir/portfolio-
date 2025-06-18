@@ -156,7 +156,7 @@ export function FloatingBar() {
             </DockIcon>
           ))}
           <Separator orientation='vertical' className='h-full py-2' />
-          <button className='p-2 border rounded-lg bg-[#7600DE]'>
+          <button className='p-2 rounded-lg bg-[#7600DE]'>
             <Link href='#contact'>Contact Me</Link>
           </button>
         </Dock>

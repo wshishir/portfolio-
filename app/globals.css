@@ -163,3 +163,12 @@ html {
   transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
     opacity 0.2s ease-in-out;
 }
+
+.hello{
+
+  font-family: " Editor's Note";
+  
+  src: url(../public/fonts/EditorsNote.otf);
+  
+  font-style:italic;
+  }

@@ -1,6 +1,12 @@
 'use client';
 
 import type React from 'react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
@@ -8,7 +14,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent } from '@/components/ui/card';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { ArrowDown, ChevronsDown, Download, Mail, MapPin, Phone, Send } from 'lucide-react';
 
 export function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -25,10 +31,10 @@ export function ContactSection() {
   };
 
   return (
-    <section id='contact' className='space-yt-12 py-12 bg-black pb-20'>
-      <div className='space-y-4 text-center'>
-        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
-          Get In Touch
+    <section id='contact' className='space-y-6 pt-8 bg-black pb-20'>
+      <div className='space-y-4 text-center mb-4'>
+        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl hello'>
+          Great design starts with a conversation. Let’s talk!
         </h2>
         <p className='text-muted-foreground max-w-[600px] mx-auto'>
           Have a project in mind? Let's discuss how I can help bring your vision
@@ -60,7 +66,7 @@ export function ContactSection() {
                 <div className='p-2 rounded-full bg-[#7600DE]/10'>
                   <MapPin className='h-4 w-4 text-[#7600DE]' />
                 </div>
-                <p>Hydrabad, India</p>
+                <p>Hyderabad, India</p>
               </div>
             </div>
           </CardContent>
@@ -82,6 +88,24 @@ export function ContactSection() {
                   placeholder='Your email'
                   required
                 />
+              </div>
+              <div className='space-y-2'>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant='outline' className='w-full text-gray-400 '>
+                      Kind of Service
+                      <ChevronsDown />
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent id='service'>
+                    <DropdownMenuItem>Logo Design</DropdownMenuItem>
+                    <DropdownMenuItem>Social Media Design</DropdownMenuItem>
+                    <DropdownMenuItem>Package Design</DropdownMenuItem>
+                    <DropdownMenuItem>
+                      Brand & Visual Identity Design
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
 
               <div className='space-y-2'>

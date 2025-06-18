@@ -25,7 +25,7 @@ export function ProjectsSection() {
     },
     {
       id: 3,
-      title: 'Sannala Ravi Chandra',
+      title: 'E-Commerce Website Branding',
       description:
         'Designed the full brand identity for Sannala Ravi Chandhra’s e-commerce site — clean, sharp, and built to stand out in the digital crowd.',
       tags: ['Branding Identity', 'Logo'],
@@ -44,7 +44,7 @@ export function ProjectsSection() {
   return (
     <section id='projects' className='space-y-12'>
       <div className='space-y-4 text-center'>
-        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
+        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl hello'>
           Featured Projects
         </h2>
         <p className='text-muted-foreground max-w-[600px] mx-auto'>
@@ -69,7 +69,7 @@ export function ProjectsSection() {
             </div>
             <CardContent className='p-6 space-y-4'>
               <div>
-                <h3 className='text-xl font-semibold'>{project.title}</h3>
+                <h3 className='text-xl font-semibold hello'>{project.title}</h3>
                 <p className='text-muted-foreground mt-2'>
                   {project.description}
                 </p>
