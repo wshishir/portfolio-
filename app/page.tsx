@@ -17,8 +17,8 @@ export default function Home() {
           <AboutSection />
           <LoopingVideo
             src='/videos/intro.mp4'
-            width='1000px' // Adjust as needed
-            height='550px' // 16:9 ratio for 1200px width
+            // Responsive sizing and spacing for mobile
+            className='w-full max-w-[1000px] h-[180px] sm:h-[300px] md:h-[400px] lg:h-[550px] object-cover rounded-2xl my-4 sm:my-8'
           />
           <ServicesSection />
           <ProjectsSection />
