@@ -1,8 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Download } from 'lucide-react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { LogoTicker } from './logo-slider';
 import Image from 'next/image';
@@ -12,23 +10,9 @@ export function HeroSection() {
   const fullText =
     'I Create Designs That Commands Attention and Leaves a Mark.';
 
-  useEffect(() => {
-    let i = 0;
-    const typingInterval = setInterval(() => {
-      if (i < fullText.length) {
-        setTypedText(fullText.substring(0, i + 1));
-        i++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, 50);
-
-    return () => clearInterval(typingInterval);
-  }, []);
-
   return (
     <section>
-      <div className='flex flex-col items-center justify-center px-8 py-12 text-center max-w-4xl mx-auto'>
+      <div className='flex flex-col items-center justify-center px-8 py-10 text-center max-w-4xl mx-auto'>
         {/* Profile Image */}
         <div className='w-24 h-24 rounded-full overflow-hidden mb-8 bg-white'>
           <Image
@@ -54,14 +38,12 @@ export function HeroSection() {
             </span>{' '}
             digital
             <br />
-            logos, brands &
-            <br />
-            experience.
+            logos, brands & experience.
           </h1>
         </div>
 
         {/* Subtext */}
-        <p className='text-gray-400 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed'>
+        <p className='text-gray-400 text-lg md:text-xl max-w-2xl mb-9 leading-relaxed hidden md:flex'>
           a Graphic Designer and Brand Designer in India.
           <br />I specialize in Logo Design, Brand Design,
           <br />
