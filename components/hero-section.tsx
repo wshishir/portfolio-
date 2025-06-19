@@ -12,7 +12,7 @@ export function HeroSection() {
 
   return (
     <section>
-      <div className='flex flex-col items-center justify-center px-8 py-10 text-center max-w-4xl mx-auto'>
+      <div className='flex flex-col items-center justify-center px-8 pt-10 pb-12 text-center max-w-4xl mx-auto'>
         {/* Profile Image */}
         <div className='w-24 h-24 rounded-full overflow-hidden mb-8 bg-white'>
           <Image

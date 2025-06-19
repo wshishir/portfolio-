@@ -3,6 +3,7 @@ import React from 'react';
 import { PenTool, Gem, Printer, SquareChartGantt } from 'lucide-react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import Image from 'next/image';
+import LoopingVideo from './LoopingVideo';
 
 const ServicesSection = () => {
   const services = [

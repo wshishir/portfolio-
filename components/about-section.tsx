@@ -1,11 +1,11 @@
-import { jak } from '@/app/layout';
-import { Badge } from '@/components/ui/badge';
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Brush, Lightbulb } from 'lucide-react';
+import LoopingVideo from './LoopingVideo';
 
 export function AboutSection() {
   return (
-    <section id='about' className='space-y-12 py-12'>
+    <section id='about' className='space-y-12'>
       <div className='space-y-4 text-center'>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl hello'>
           Know Me A Little{' '}
@@ -50,7 +50,7 @@ export function AboutSection() {
             </p>
           </CardContent>
         </Card>
-      </div>
+  </div>
     </section>
   );
 }
