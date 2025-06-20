@@ -129,7 +129,7 @@ html {
 }
 
 .logo-ticker-image {
-  @apply h-16 w-auto;
+  @apply h-20 w-auto;
 }
 .skills-sec {
   @apply bg-white text-black;

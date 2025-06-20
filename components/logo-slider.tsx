@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 export const LogoTicker = () => {
   return (
-    <div className=' bg-black'>
+    <div className='bg-black'>
       <div className='container'>
         <div className='flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]'>
           <motion.div

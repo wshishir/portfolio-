@@ -51,14 +51,6 @@ export async function sendContactMessage(formData: ContactFormData) {
     //   })
     // })
 
-    // 2. Or store in a database:
-    // await db.insert(messages).values({
-    //   name: validatedData.name,
-    //   email: validatedData.email,
-    //   message: validatedData.message,
-    //   createdAt: new Date()
-    // })
-
     return { success: true }
   } catch (error) {
     console.error("Contact form error:", error)
