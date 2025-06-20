@@ -69,7 +69,7 @@ export function ProjectsSection() {
             </div>
             <CardContent className='p-6 space-y-4'>
               <div>
-                <h3 className='text-xl font-semibold hello'>{project.title}</h3>
+                <h3 className='text-xl font-semibold '>{project.title}</h3>
                 <p className='text-muted-foreground mt-2'>
                   {project.description}
                 </p>

@@ -62,7 +62,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="space-y-12 py-6">
       <div className="space-y-4 text-center">
-        <h2 className="hello text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Great design starts with a conversation. Let’s talk!</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Great design starts with a conversation. Let’s talk!</h2>
         <p className="text-muted-foreground max-w-[600px] mx-auto">
           Have a project in mind? Let's discuss how I can help bring your vision to life.
         </p>

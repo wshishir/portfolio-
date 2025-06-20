@@ -164,11 +164,16 @@ html {
     opacity 0.2s ease-in-out;
 }
 
-.hello{
-
-  font-family: " Editor's Note";
-  
+@font-face {
+  font-family: "Editor's Note";
   src: url(../public/fonts/EditorsNote.otf);
   
-  font-style:italic;
-  }
+}
+
+h2 {
+  font-family: "Editor's Note" !important;
+}
+
+h3 {
+  font-family: "Editor's Note" !important;
+}

@@ -68,7 +68,7 @@ const ServicesSection = () => {
                   })}
                 </div>
                 <div>
-                  <h3 className='text-xl font-semibold hello'>{service.title}</h3>
+                  <h3 className='text-xl font-semibold '>{service.title}</h3>
                   <p className='text-muted-foreground mt-2 text-start'>
                     {service.description}
                   </p>
