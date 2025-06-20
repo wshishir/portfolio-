@@ -38,25 +38,30 @@ export default function DzinrNavbar() {
               </p>
               <div className='flex gap-4 justify-center lg:justify-end'>
                 <Link
-                  href='#'
+                  href='https://www.instagram.com/designedbylaksh/'
                   className='text-gray-400 hover:text-white transition-colors'
                   aria-label='Instagram'
                 >
                   <Instagram size={24} />
                 </Link>
                 <Link
-                  href='#'
+                  href='https://www.linkedin.com/in/lakshmika-kesireddy/'
                   className='text-gray-400 hover:text-white transition-colors'
                   aria-label='LinkedIn'
                 >
                   <Linkedin size={24} />
                 </Link>
                 <Link
-                  href='#'
+                  href='https://www.behance.net/lakshmikesired'
                   className='text-gray-400 hover:text-white transition-colors'
                   aria-label='LinkedIn'
                 >
-                  <Linkedin size={24} />
+                  <Image
+                    src='/behance.svg'
+                    alt='behance'
+                    width={24}
+                    height={30}
+                  />
                 </Link>
               </div>
             </div>
@@ -65,7 +70,7 @@ export default function DzinrNavbar() {
         <hr className='h-px my-8 bg-gray-200 border-0 dark:bg-gray-700'></hr>
 
         {/* Bottom section */}
-        <div className='flex flex-col lg:flex-row items-center justify-between gap-3  px-12'>
+        <div className='flex flex-col lg:flex-row items-center justify-between gap-6 px-12'>
           {/* Designed by */}
           <Link
             href='https://shishir.site'
