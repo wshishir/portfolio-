@@ -33,12 +33,12 @@ export function HeroSection() {
         <div className='mb-8'>
           <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4'>
             <span className='relative'>
-              Designing
+            Your business is
               <div className='absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-white to-purple-500 rounded-full'></div>
             </span>{' '}
-            digital
+            unique — your visuals should be too.
             <br />
-            logos, brands & experience.
+            
           </h1>
         </div>
 

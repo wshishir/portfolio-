@@ -60,7 +60,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="space-y-12 py-12">
+    <section id="contact" className="space-y-12 py-6">
       <div className="space-y-4 text-center">
         <h2 className="hello text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Great design starts with a conversation. Let’s talk!</h2>
         <p className="text-muted-foreground max-w-[600px] mx-auto">
