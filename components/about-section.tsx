@@ -7,7 +7,7 @@ export function AboutSection() {
   return (
     <section id='about' className='space-y-12'>
       <div className='space-y-4 text-center'>
-        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl hello'>
+        <h2 className='text-3xl font-bold  sm:text-4xl md:text-5xl hello'>
           Know Me A Little{' '}
         </h2>
         <p className='text-muted-foreground max-w-[600px] mx-4 md:mx-auto'>
@@ -25,7 +25,7 @@ export function AboutSection() {
               <div className='p-2 rounded-full bg-white'>
                 <Brush className='h-5 w-5 text-[#7600DE]' />
               </div>
-              <h3 className='text-xl font-semibold hello'>My Approach</h3>
+              <h3 className='text-xl font-semibold hello tracking-wide'>My Approach</h3>
             </div>
             <p className='text-muted-foreground'>
               I believe that great design tells a story. My process involves
@@ -41,7 +41,7 @@ export function AboutSection() {
               <div className='p-2 rounded-full bg-white'>
                 <Lightbulb className='h-5 w-5 text-[#7600DE]' />
               </div>
-              <h3 className='text-xl font-semibold hello'>Philosophy</h3>
+              <h3 className='text-xl font-semibold tracking-wide'>Philosophy</h3>
             </div>
             <p className='text-muted-foreground'>
               Simplicity is the ultimate sophistication. I focus on creating

@@ -20,13 +20,13 @@ export function HeroSection() {
         </div>
 
         {/* Greeting */}
-        <h2 className='text-xl md:text-2xl font-medium mb-6 text-gray-200'>
+        <h2 className='text-xl md:text-2xl font-medium mb-6 text-gray-200 tracking-wide'>
           Hi, I'm Lakshmika 👋
         </h2>
 
         {/* Main Heading with Underline */}
         <div className='mb-8'>
-          <h1 className='text-4xl md:text-6xl lg:text-6xl font-bold leading-tight mb-4'>
+          <h1 className='text-4xl md:text-6xl lg:text-6xl font-bold leading-tight mb-4 tracking-wide'>
             Your business is{' '}
             <span className='relative'>
               unique

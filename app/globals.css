@@ -167,7 +167,6 @@ html {
 @font-face {
   font-family: "Editor's Note";
   src: url(../public/fonts/EditorsNote.otf);
-  
 }
 
 h2 {
@@ -175,5 +174,10 @@ h2 {
 }
 
 h3 {
+  font-family: "Editor's Note" !important;
+  
+}
+
+h1 {
   font-family: "Editor's Note" !important;
 }

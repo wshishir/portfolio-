@@ -45,7 +45,7 @@ const ServicesSection = () => {
           width={40}
           height={40}
         />
-        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl hello'>
+        <h2 className='text-3xl font-bold  sm:text-4xl md:text-5xl hello'>
           Offered Services
         </h2>
         <p className='text-muted-foreground max-w-[600px] mx-auto'>
@@ -67,7 +67,7 @@ const ServicesSection = () => {
                   })}
                 </div>
                 <div>
-                  <h3 className='text-xl font-semibold '>{service.title}</h3>
+                  <h3 className='text-xl font-semibold  tracking-wide'>{service.title}</h3>
                   <p className='text-muted-foreground mt-2 text-start'>
                     {service.description}
                   </p>
