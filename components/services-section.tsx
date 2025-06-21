@@ -1,9 +1,8 @@
 'use client';
 import React from 'react';
 import { PenTool, Gem, Printer, SquareChartGantt } from 'lucide-react';
-import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Card, CardContent} from '@/components/ui/card';
 import Image from 'next/image';
-import LoopingVideo from './LoopingVideo';
 
 const ServicesSection = () => {
   const services = [
@@ -42,7 +41,7 @@ const ServicesSection = () => {
         <Image
           src='/arrow.png'
           alt='arrow'
-          className='text-white absolute -rotate-180 right-[6%] top-2 md:top-4 md:right-28'
+          className='text-white absolute -rotate-180 right-[6%] top-2 md:top-4 md:right-32'
           width={40}
           height={40}
         />

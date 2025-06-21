@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function DzinrNavbar() {
   return (
-    <footer className='bg-black text-white relative overflow-hidden md:mx-24 pb-3'>
+    <footer className='bg-black text-white relative overflow-hidden md:mx-24 pb-12'>
       <hr className='h-px my-8  bg-gray-200 border-0 dark:bg-gray-700'></hr>
       <div className=''>
         {/* Main content area */}
@@ -39,22 +39,21 @@ export default function DzinrNavbar() {
               <div className='flex gap-4 justify-center lg:justify-end'>
                 <Link
                   href='https://www.instagram.com/designedbylaksh/'
-                  className='text-gray-400 hover:text-white transition-colors'
+                  className='text-gray-400 '
                   aria-label='Instagram'
                 >
                   <Instagram size={24} />
                 </Link>
                 <Link
                   href='https://www.linkedin.com/in/lakshmika-kesireddy/'
-                  className='text-gray-400 hover:text-white transition-colors'
+                  className='text-gray-400 '
                   aria-label='LinkedIn'
                 >
                   <Linkedin size={24} />
                 </Link>
                 <Link
                   href='https://www.behance.net/lakshmikesired'
-                  className='text-gray-400 hover:text-white transition-colors'
-                  aria-label='LinkedIn'
+                  aria-label='Behance'
                 >
                   <Image
                     src='/behance.svg'
@@ -83,7 +82,7 @@ export default function DzinrNavbar() {
           </Link>
 
           {/* Copyright */}
-          <div className='text-gray-400 text-sm order-3  justify-center '>
+          <div className='text-gray-400 text-sm order-3  justify-center whitespace-nowrap'>
             Lakshmika © Copyright 2025 All Rights Reserved
           </div>
         </div>

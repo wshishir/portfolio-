@@ -11,8 +11,8 @@ export function AboutSection() {
           Know Me A Little{' '}
         </h2>
         <p className='text-muted-foreground max-w-[600px] mx-4 md:mx-auto'>
-          I’m a 23-year-old self-taught graphic designer from Hyderabad, India
-          shaping brands with creativity and bold design. With over two years in
+          I’m a 23-year-old self-taught graphic designer from Hyderabad, India.
+          Shaping brands with creativity and bold design, With over two years in
           the field, I’ve learned that design isn’t just about aesthetics—it’s
           about storytelling.
         </p>
