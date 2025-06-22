@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function DzinrNavbar() {
   return (
-    <footer className='bg-black text-white relative overflow-hidden md:mx-24 pb-12'>
+    <footer className='bg-black text-white relative overflow-hidden md:mx-24 md:pb-1 pb-12'>
       <hr className='h-px my-8  bg-gray-200 border-0 dark:bg-gray-700'></hr>
       <div className=''>
         {/* Main content area */}
@@ -58,8 +58,8 @@ export default function DzinrNavbar() {
                   <Image
                     src='/behance.svg'
                     alt='behance'
-                    width={24}
-                    height={30}
+                    width={26}
+                    height={24}
                   />
                 </Link>
               </div>
@@ -75,14 +75,14 @@ export default function DzinrNavbar() {
             href='https://shishir.site'
             target='_blank'
             rel='noopener noreferrer'
-            className='flex items-center gap-1 text-gray-400 text-sm order-2 lg:order-1 cursor-pointer hover:text-white'
+            className='flex items-center gap-1 text-gray-400 text-sm hover:text-white transition-colors'
           >
             Made with <Heart size={16} className='text-red-500 fill-red-500' />
             by Shishir
           </Link>
 
           {/* Copyright */}
-          <div className='text-gray-400 text-sm order-3  justify-center whitespace-nowrap'>
+          <div className='text-gray-400 text-sm text-center lg:text-right whitespace-nowrap'>
             Lakshmika © Copyright 2025 All Rights Reserved
           </div>
         </div>

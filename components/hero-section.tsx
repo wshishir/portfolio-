@@ -7,38 +7,34 @@ import Image from 'next/image';
 export function HeroSection() {
   return (
     <section>
-      <div className='flex flex-col items-center justify-center px-8 pt-10 pb-16 text-center max-w-4xl mx-auto'>
+      <div className='flex flex-col items-center justify-center md:px-8 md:pt-6  md:pb-12 pb-7 text-center max-w-4xl mx-auto'>
         {/* Profile Image */}
-        <div className='w-24 h-24 rounded-full overflow-hidden mb-8 bg-white'>
+        <div className='w-96 h-64 rounded-lg overflow-hidden mb-5 bg-black flex items-center justify-center'>
           <Image
-            src='/pfp.png'
+            src='/hero.png'
             alt='Profile photo'
-            width={96}
-            height={96}
-            className='w-full h-full object-cover'
+            width={320}
+            height={320}
+            className='w-full h-full object-contain'
           />
         </div>
 
-        {/* Greeting */}
-        <h2 className='text-xl md:text-2xl font-medium mb-6 text-gray-200 tracking-wide'>
-          Hi, I'm Lakshmika 👋
-        </h2>
-
         {/* Main Heading with Underline */}
-        <div className='mb-8'>
-          <h1 className='text-4xl md:text-6xl lg:text-6xl font-bold leading-tight mb-4 tracking-wide'>
+        <div className='mb-3  md:mb-4'>
+          <h1 className='text-3xl md:text-6xl lg:text-6xl font-bold leading-tight mb-4 tracking-wide'>
             Your business is{' '}
             <span className='relative'>
-              unique
+              unique,
               <div className='absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-white to-purple-500 rounded-full'></div>
             </span>{' '}
-            — your visuals should be too.
+            <br />
+            your visuals should be too.
             <br />
           </h1>
         </div>
 
         {/* Subtext */}
-        <p className='text-gray-400 text-lg md:text-xl max-w-2xl mb-9 leading-relaxed hidden md:flex'>
+        <p className='text-gray-400 md:text-xl max-w-2xl md:mb-9  mb-4 leading-relaxed '>
           I build brand identities, logos, and packaging that match your vision.
         </p>
 
