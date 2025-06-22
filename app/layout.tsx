@@ -10,7 +10,7 @@ export const jak = Plus_Jakarta_Sans({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
   title: 'Lakshmika - Graphic & Logo Designer',
-  description: '',
+  description: 'Graphic designer crafting bold logos, unique brand identities, and modern packaging. Explore my work and bring your brand to life.` ',
   icons:'/favicon.png',
 };
 

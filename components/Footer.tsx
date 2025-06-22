@@ -22,7 +22,7 @@ export default function DzinrNavbar() {
               NEED SUPPORT?
             </p>
             <a
-              href='mailto:dzinr.co@gmail.com'
+              href='mailto:designbylakshmika@gmail.com'
               className='text-gray-300 hover:text-white transition-colors'
             >
               designbylakshmika@gmail.com
