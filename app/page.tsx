@@ -20,7 +20,7 @@ export default function Home() {
             <LoopingVideo
               src='/videos/intro.mp4'
               // Responsive sizing and spacing for mobile
-              className='w-full max-w-[1000px] h-[180px] sm:h-[500px] md:h-[400px] lg:h-[550px] object-contain rounded-2xl my-4 sm:my-8'
+              className='w-full max-w-[1000px] h-[200px] sm:h-[500px] md:h-[400px] lg:h-[550px] object-contain rounded-2xl my-4 sm:my-8'
             />
             <ServicesSection />
             <ProjectsSection />
