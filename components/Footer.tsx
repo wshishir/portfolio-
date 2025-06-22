@@ -1,6 +1,5 @@
 import { Instagram, Linkedin, ArrowRight, Heart } from 'lucide-react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
 export default function DzinrNavbar() {
@@ -75,7 +74,7 @@ export default function DzinrNavbar() {
             href='https://shishir.site'
             target='_blank'
             rel='noopener noreferrer'
-            className='flex items-center gap-1 text-gray-400 text-sm hover:text-white transition-colors'
+            className='flex items-center gap-1 text-gray-400 text-sm hover:text-white transition-colors z-10'
           >
             Made with <Heart size={16} className='text-red-500 fill-red-500' />
             by Shishir

@@ -1,7 +1,6 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Brush, Lightbulb } from 'lucide-react';
-import LoopingVideo from './LoopingVideo';
 
 export function AboutSection() {
   return (
