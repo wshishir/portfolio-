@@ -40,6 +40,7 @@ export default function DzinrNavbar() {
                   href='https://www.instagram.com/designedbylaksh/'
                   className='text-gray-400 '
                   aria-label='Instagram'
+                  target="_blank"
                 >
                   <Instagram size={24} />
                 </Link>
@@ -47,12 +48,15 @@ export default function DzinrNavbar() {
                   href='https://www.linkedin.com/in/lakshmika-kesireddy/'
                   className='text-gray-400 '
                   aria-label='LinkedIn'
+                  target="_blank"
+                  
                 >
                   <Linkedin size={24} />
                 </Link>
                 <Link
                   href='https://www.behance.net/lakshmikesired'
                   aria-label='Behance'
+                  target="_blank"
                 >
                   <Image
                     src='/behance.svg'
